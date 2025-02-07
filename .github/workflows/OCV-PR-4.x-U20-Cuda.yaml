@@ -34,7 +34,7 @@ jobs:
       run:
         shell: bash
     container:
-      image: quay.io/opencv-ci/opencv-ubuntu-20.04:20230413
+      image: quay.io/opencv-ci/opencv-ubuntu-20.04:20250207
       options: --gpus all -m 8G
       volumes:
         - /home/opencv-cn/git_cache:/home/ci/git_cache
