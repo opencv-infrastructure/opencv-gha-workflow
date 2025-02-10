@@ -33,7 +33,7 @@ jobs:
       run:
         shell: bash
     container:
-      image: quay.io/opencv-ci/opencv-ubuntu-20.04-openvino:20250207
+      image: quay.io/opencv-ci/opencv-ubuntu-20.04-openvino:20230724
       volumes:
         - /home/opencv-cn/git_cache:/home/openvino/git_cache
         - /home/opencv-cn/ci_cache/opencv:/home/openvino/.ccache
