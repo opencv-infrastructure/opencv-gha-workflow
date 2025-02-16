@@ -186,7 +186,7 @@ jobs:
         # NOTE: Just keeping this construction here for possible future use:
         #   ${{ (github.event.repository.name == 'opencv_contrib') && format('''linux-contrib-{0}''', matrix.branch)  || '' }}
         suite: "[ ${{ (github.event.repository.name == 'opencv_contrib') && '''linux-contrib'''  || '''linux''' }} ]"
-        filter: "[ 'ubuntu-common', ${{ matrix.avx2 && '''ubuntu-avx2''' }} ]"
+        filter: "[ 'ubuntu-common', ${{ matrix.avx2 && '''ubuntu-avx2''' }}, ${{ matrix.version == '24.04' && '''ubuntu-24'''}} ]"
         enable_python: "true"
         enable_java: "true"
         suffix: '${{ matrix.version }}_${{ matrix.branch }}'
